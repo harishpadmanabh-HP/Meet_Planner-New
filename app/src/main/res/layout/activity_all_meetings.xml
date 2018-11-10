@@ -13,7 +13,7 @@
         android:titleTextColor="#fbf7f7"
 
         android:background="#d55757"
-        android:title="This Week's Meeting"
+        android:title="All Meetings Scheduled"
         android:gravity="center"
         android:id="@+id/tool"
         android:padding="20dp"
