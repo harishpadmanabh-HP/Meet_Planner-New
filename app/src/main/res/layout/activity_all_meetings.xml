@@ -20,12 +20,12 @@
 
         ></Toolbar>
     <ListView
+
         android:id="@+id/hosplist"
         android:layout_below="@+id/tool"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true" />
+        />
 
     <com.getbase.floatingactionbutton.FloatingActionsMenu
         android:id="@+id/multiple_actions"
@@ -37,9 +37,29 @@
         android:layout_marginBottom="139dp"
         android:layout_marginEnd="25dp"
         android:gravity="right"
+
         app:fab_addButtonColorNormal="@color/colorAccent"
         app:fab_addButtonColorPressed="#fff"
         app:fab_addButtonPlusIconColor="#fff">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today!"
+                android:textColor="#000" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="#fff"
+                app:fab_colorPressed="#fff"
+                android:src="@drawable/tomorrow_icon_small"/>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
